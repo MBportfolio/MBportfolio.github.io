@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Link in bootstrap, my own CSS sheet, and Animate on Scroll library -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <title>Mychael's Portfolio</title>
+        <script>
+            window.addEventListener('load', AOS.refresh)
+            window.addEventListener('load', function () {
+
+            // Initialize animation library, choose default settings
+            AOS.init({
+                duration: 800,
+                delay: 50,
+            });
+
+
+            });
+        </script>
+    </head>
+    <body>
+
+        <div class="header">
+            <nav class="nav nav-pills nav-justified">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="projects.html">Projects</a>
+                <a class="nav-item nav-link active" href="resume.html">Resume</a>
+                <a class="nav-item nav-link" href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <!-- Resume, source: https://codepen.io/chih-hsi-chen/pen/KKpXLqR -->
+        <div class="wrapper">
+            <div class="intro">
+
+              <div class="profile">
+                <div class="photo">
+                  <img src="https://i.ibb.co/vjXYKjT/Cartoonify-1.png" alt="Avatar">
+                </div>
+                <div class="bio">
+                  <h1 class="name">Mychael Bryan</h1>
+                  <p class="profession">Mechanical Project Engineer</p>
+                </div>
+              </div>
+
+              <div class="intro-section about">
+                <h1 class="title">about me</h1>
+                <p class="paragraph">
+                  I'm a Mechanical Project Engineer with a Bachelor's of Science degree in mechanical engineering from Rutgers University
+                  and a passion for software engineering. While I don't yet have a full-time job as a software engineer, I've learned to
+                  leverage my four years of internship experience at Eastern Automation Systems where I developed custom software, helping to
+                  enable a one-person operation to run a company that brought in several hundred thousand dollars. The Asbury Park Press even
+                  recognized my contribution by nominating Eastern Automation Systems as one of the top three innovative manufacturing businesses
+                  in New Jersey in 2017. And don't take my word for it - check out my LinkedIn references where the owner of Eastern Automation
+                  Systems gave a glowing recommendation based on my ability to learn quickly and my attention to detail.
+                  More recently at Whitman where I work as a Mechanical Project Engineer, I've developed applications to streamline my workflow
+                  including a duct sizing tool and macros to automate AutoCAD tasks. Thanks to my ability to learn quickly, Whitman was able to
+                  successfully omplete it's first in-house Revit job under tight time constraints. I lead this effort and was promoted shortly
+                  after this success even though I had only been with the company for a year. Now, I'm looking to begin a full-time career as a
+                  software engineer. I've proven my ability to pick up new skils quickly, took the initiative to construct a standout
+                  portfolio, have actual on-the-job experience, earned a relevant engineering degree, and have glowing recommendations, so what
+                  are you waiting for, an invitation? Well here's one - contact me today!
+
+                </p>
+              </div>
+
+              <div class="intro-section contact">
+                <h1 class="title">Contact</h1>
+                <div class="info-section">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Freehold, NJ</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Start of "resume" portion-->
+            <div class="detail">
+              <div class="detail-section edu">
+                <div class="detail-title">
+                  <div class="title-icon">
+                    <i class="fas fa-user-graduate"></i>
+                  </div>
+                  <span>Eduation</span>
+                </div>
+                <div class="detail-content">
+                  <div class="timeline-block">
+                    <h1>Rutgers University</h1>
+                    <p>B.S. Mechanical Engineering</p>
+                    <p>GPA: 3.95</p>
+                    <time datetime="2015">2015 - 2019</time>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Skills -->
+              <div class="detail-section pg-skill">
+                <div class="detail-title">
+                  <div class="title-icon">
+                    <i class="fas fa-laptop-code"></i>
+                  </div>
+                  <span>Programming skills</span>
+                </div>
+                <div class="detail-content">
+                  <ul class="pg-list">
+                    <li>
+                      <span>HTML5</span>
+                      <div class="sb-skeleton">
+                        <div class="skillbar" style="--pgbar-length: 90%"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <span>CSS3</span>
+                      <div class="sb-skeleton">
+                        <div class="skillbar" style="--pgbar-length: 75%"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <span>Javascript</span>
+                      <div class="sb-skeleton">
+                        <div class="skillbar" style="--pgbar-length: 70%"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <span>JQuery</span>
+                      <div class="sb-skeleton">
+                        <div class="skillbar" style="--pgbar-length: 50%"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <span>NodeJS</span>
+                      <div class="sb-skeleton">
+                        <div class="skillbar" style="--pgbar-length: 70%"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <span>ReactJS</span>
+                      <div class="sb-skeleton">
+                        <div class="skillbar" style="--pgbar-length: 75%"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <span>VueJS</span>
+                      <div class="sb-skeleton">
+                        <div class="skillbar" style="--pgbar-length: 40%"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Dev Tools -->
+              <div class="detail-section tool-skill">
+                <div class="detail-title">
+                  <div class="title-icon">
+                    <i class="fas fa-tools"></i>
+                  </div>
+                  <span>Developement Tools</span>
+                </div>
+                <div class="detail-content">
+                  <ul class="tool-list">
+                    <li>
+                      <svg viewbox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45"></circle>
+                        <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.6"></circle>
+                      </svg>
+                      <span class="tl-name">Photoshop</span>
+                      <span class="tl-exp">60%</span>
+                    </li>
+                    <li>
+                      <svg viewbox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45"></circle>
+                        <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.8"></circle>
+                      </svg>
+                      <span class="tl-name">Sublime</span>
+                      <span class="tl-exp">80%</span>
+                    </li>
+                    <li>
+                      <svg viewbox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45"></circle>
+                        <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.7"></circle>
+                      </svg>
+                      <span class="tl-name">Git</span>
+                      <span class="tl-exp">70%</span>
+                    </li>
+                    <li>
+                      <svg viewbox="0 0 100 100">
+                        <circle cx="50" cy="50" r="45"></circle>
+                        <circle class="cbar" cx="50" cy="50" r="45" style="--percent: 0.74"></circle>
+                      </svg>
+                      <span class="tl-name">NPM</span>
+                      <span class="tl-exp">74%</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Work Experience -->
+                <div class="detail-section exp">
+                  <div class="detail-title">
+                    <div class="title-icon">
+                      <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <span>Experience</span>
+                  </div>
+                  <div class="detail-content">
+
+                    <div class="timeline-block">
+                      <h1>Whitman</h1>
+                      <i>Project Engineer</i>
+                      <div class="text-list">
+                        <ul>
+                        <li>short</li>
+                        <li>Did various engineering tasks using software demonstrating skill</li>
+                        <li>Action verb noun description more words successfully proving skill</li>
+                        <li>Impressive numbers and statistics to catch 100% of attention in under 30 seconds</li>
+                        <li>A short line of text</li>
+                        <li>Still more text</li>
+                        </ul>
+                      </div>
+                      <time datetime="2021">May 2021 - Present</time>
+                    </div>
+
+                    <div class="timeline-block">
+                      <h1>Kelter & Gilligo</h1>
+                      <i>Mechanical Designer</i>
+                      <div class="text-list">
+                        <ul>
+                        <li>short</li>
+                        <li>Did various engineering tasks using software demonstrating skill</li>
+                        <li>Action verb noun description more words successfully proving skill</li>
+                        <li>Impressive numbers and statistics to catch 100% of attention in under 30 seconds</li>
+                        <li>A short line of text</li>
+                        <li>Still more text</li>
+                        </ul>
+                      </div>
+                      <time datetime="2019">April 2019 - May 2021</time>
+                    </div>
+
+                    <div class="timeline-block">
+                      <h1>Eastern Automation Systems</h1>
+                      <i>Engineering Intern</i>
+                      <div class="text-list">
+                        <ul>
+                        <li>short</li>
+                        <li>Did various engineering tasks using software demonstrating skill</li>
+                        <li>Action verb noun description more words successfully proving skill</li>
+                        <li>Impressive numbers and statistics to catch 100% of attention in under 30 seconds</li>
+                        <li>A short line of text</li>
+                        <li>Still more text</li>
+                        </ul>
+                      </div>
+                      <time datetime="2015">2015-2018, Summers & Winters</time>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Hobbies
+              <div class="detail-section interests">
+                <div class="detail-title">
+                  <div class="title-icon">
+                    <i class="fas fa-heart"></i>
+                  </div>
+                  <span>Interests</span>
+                </div>
+                <div class="detail-content">
+                  <div class="outer-frame">
+                    <ul class="favor-list">
+                      <li>
+                        <i class="fas fa-gamepad"></i>
+                        <span>Game</span>
+                      </li>
+                      <li>
+                        <i class="fas fa-paw"></i>
+                        <span>Pet</span>
+                      </li>
+                      <li>
+                        <i class="far fa-headphones-alt"></i>
+                        <span>Music</span>
+                      </li>
+                      <li>
+                        <i class="fas fa-book-spells"></i>
+                        <span>Self-learning</span>
+                      </li>
+                      <li>
+                        <i class="fas fa-user-edit"></i>
+                        <span>Blog</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            -->
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="footer-dark">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="projects.html">Featured Projects</a></li>
+                                <li><a href="resume.html">Resume</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>Social Media</h3>
+                            <ul>
+                                <li><a href="https://www.linkedin.com/in/mychaelbryan/">LinkedIn</a></li>
+                                <li><a href="https://github.com/MBportfolio">GitHub</a></li>
+                                <li><a href="projects.html">Portfolio</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 item text">
+                            <h3>Contact</h3>
+                            <ul>
+                                <li><a href="mailto:example@gmail.com">E-mail: example@gmail.com</a></li>
+                                <li><a href="tel:1234567890">Phone: 123-456-7890</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="copyright">Mychael Bryan © 2022</p>
+                </div>
+            </footer>
+        </div>
+
+    </body>
+</html>
