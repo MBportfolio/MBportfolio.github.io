@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Link in bootstrap, my own CSS sheet, and Animate on Scroll library -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <title>Mychael's Portfolio</title>
+        <meta name="robots" content="noimageindex, none, nosnippet">
+        <script>
+
+        /*
+        You'll note several sources were used in building this site. After exceeding the assignment requirements,
+        I used templates by others and modified them to fit my portfolio site. Sources are provided in comments.
+        For example, the footer layout is based on a template. I added an additional list item including a
+        phone number and email, linked these with mailto and tel, changed the CSS, etc.
+        Tags used on my own: script (aos library), link (aos library), nav, a, iframe, p, hr/h1/h2/h3/h5, option,
+        select, label, etc (10+). In the end, I've gone well beyond the assignment requirements and used templates
+        to make the site even nicer and more interactive. This comment is intended to clarify which portions of this
+        site are my own, which are from templates, and why design decisions were made.
+        Image hosting: https://imgbb.com/
+        */
+
+            window.addEventListener('load', AOS.refresh)
+            window.addEventListener('load', function () {
+
+            // Initialize animation library, choose default settings
+            AOS.init({
+                duration: 800,
+                delay: 50,
+            });
+
+        // Selecting the iframe element.
+        //Source: https://www.geeksforgeeks.org/how-to-adjust-the-width-and-height-of-iframe-to-fit-with-content-in-it/
+        var frame = document.getElementById("myFrame");
+        // Adjusting the iframe height onload event
+        frame.onload = function()
+        // function execute while load the iframe
+        {
+          // set the height of the iframe as
+          // the height of the iframe content
+          frame.style.height =
+          frame.contentWindow.document.body.scrollHeight + 'px';
+         // set the width of the iframe as the
+         // width of the iframe content
+         frame.style.width  =
+          frame.contentWindow.document.body.scrollWidth+'px';
+        }
+
+
+        });
+
+        </script>
+
+
+    </head>
+    <body>
+
+        <div class="header">
+            <nav class="nav nav-pills nav-justified">
+                <a class="nav-item nav-link active" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="projects.html">Projects</a>
+                <a class="nav-item nav-link" href="resume.html">Resume</a>
+                <a class="nav-item nav-link" href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="section">
+
+
+                <div class="section">
+                <div class="ratio ratio-16x9">
+                    <iframe
+                    src="https://www.youtube.com/embed/vlDzYIIOYmM"
+                    title="Sample YouTube video"
+                    allowfullscreen
+                    id="myFrame"
+                    ></iframe>
+                </div>
+                </div>
+
+
+                <h2>About Me</h2>
+                <hr>
+
+                <p data-aos="zoom-in">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim diam, lobortis sit amet dignissim sed, suscipit ut eros. Aenean sit amet magna tincidunt, suscipit libero vitae, aliquam risus. Aliquam tempus malesuada eros sed ullamcorper. Fusce elit velit, dapibus non ipsum vitae, facilisis ultrices dolor. Aenean non ornare mauris, ac fringilla massa. Curabitur finibus ante augue, sit amet sodales quam malesuada at. Sed ac velit est. Quisque vitae lorem nec ipsum semper placerat eget eu dolor. Proin porta finibus massa, sit amet scelerisque mi rhoncus quis. Integer metus sem, auctor id placerat in, commodo sit amet augue. Quisque et nunc metus. Ut ac eros faucibus, laoreet nibh congue, convallis tellus. Fusce consectetur lectus id mi finibus, id faucibus libero lacinia. Curabitur placerat odio metus, sed gravida libero commodo nec. Praesent placerat blandit diam, in lacinia elit ultricies non.</p>
+                <p data-aos="zoom-in">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam tincidunt vestibulum neque, id fringilla metus vestibulum a. Vivamus interdum, nisi in pulvinar convallis, mi velit lobortis metus, a vulputate odio felis sit amet dolor. Vestibulum ut quam nec orci maximus venenatis. Sed eget risus interdum, accumsan massa in, auctor dui. Vivamus in fermentum enim. Curabitur facilisis mi interdum, aliquet leo vel, eleifend elit. Morbi gravida turpis sit amet mattis venenatis.</p>
+                <p data-aos="zoom-in">Nunc vulputate eleifend magna eget fringilla. Morbi facilisis velit id blandit tincidunt. Vivamus lacinia venenatis lectus a efficitur. Morbi et vestibulum metus. Sed dictum ex nec eros sagittis, sit amet convallis lorem fermentum. Ut metus turpis, pharetra ac dui sit amet, tincidunt fringilla est. Quisque a euismod lorem. Praesent tincidunt diam ut justo consequat, ut vehicula arcu lobortis.</p>
+                <p data-aos="zoom-in">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim diam, lobortis sit amet dignissim sed, suscipit ut eros. Aenean sit amet magna tincidunt, suscipit libero vitae, aliquam risus. Aliquam tempus malesuada eros sed ullamcorper. Fusce elit velit, dapibus non ipsum vitae, facilisis ultrices dolor. Aenean non ornare mauris, ac fringilla massa. Curabitur finibus ante augue, sit amet sodales quam malesuada at. Sed ac velit est. Quisque vitae lorem nec ipsum semper placerat eget eu dolor. Proin porta finibus massa, sit amet scelerisque mi rhoncus quis. Integer metus sem, auctor id placerat in, commodo sit amet augue. Quisque et nunc metus. Ut ac eros faucibus, laoreet nibh congue, convallis tellus. Fusce consectetur lectus id mi finibus, id faucibus libero lacinia. Curabitur placerat odio metus, sed gravida libero commodo nec. Praesent placerat blandit diam, in lacinia elit ultricies non.</p>
+                <p data-aos="zoom-in">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam tincidunt vestibulum neque, id fringilla metus vestibulum a. Vivamus interdum, nisi in pulvinar convallis, mi velit lobortis metus, a vulputate odio felis sit amet dolor. Vestibulum ut quam nec orci maximus venenatis. Sed eget risus interdum, accumsan massa in, auctor dui. Vivamus in fermentum enim. Curabitur facilisis mi interdum, aliquet leo vel, eleifend elit. Morbi gravida turpis sit amet mattis venenatis.</p>
+                <p data-aos="zoom-in">Nunc vulputate eleifend magna eget fringilla. Morbi facilisis velit id blandit tincidunt. Vivamus lacinia venenatis lectus a efficitur. Morbi et vestibulum metus. Sed dictum ex nec eros sagittis, sit amet convallis lorem fermentum. Ut metus turpis, pharetra ac dui sit amet, tincidunt fringilla est. Quisque a euismod lorem. Praesent tincidunt diam ut justo consequat, ut vehicula arcu lobortis.</p>
+                <p data-aos="zoom-in">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim diam, lobortis sit amet dignissim sed, suscipit ut eros. Aenean sit amet magna tincidunt, suscipit libero vitae, aliquam risus. Aliquam tempus malesuada eros sed ullamcorper. Fusce elit velit, dapibus non ipsum vitae, facilisis ultrices dolor. Aenean non ornare mauris, ac fringilla massa. Curabitur finibus ante augue, sit amet sodales quam malesuada at. Sed ac velit est. Quisque vitae lorem nec ipsum semper placerat eget eu dolor. Proin porta finibus massa, sit amet scelerisque mi rhoncus quis. Integer metus sem, auctor id placerat in, commodo sit amet augue. Quisque et nunc metus. Ut ac eros faucibus, laoreet nibh congue, convallis tellus. Fusce consectetur lectus id mi finibus, id faucibus libero lacinia. Curabitur placerat odio metus, sed gravida libero commodo nec. Praesent placerat blandit diam, in lacinia elit ultricies non.</p>
+                <p data-aos="zoom-in">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam tincidunt vestibulum neque, id fringilla metus vestibulum a. Vivamus interdum, nisi in pulvinar convallis, mi velit lobortis metus, a vulputate odio felis sit amet dolor. Vestibulum ut quam nec orci maximus venenatis. Sed eget risus interdum, accumsan massa in, auctor dui. Vivamus in fermentum enim. Curabitur facilisis mi interdum, aliquet leo vel, eleifend elit. Morbi gravida turpis sit amet mattis venenatis.</p>
+                <p data-aos="zoom-in">Nunc vulputate eleifend magna eget fringilla. Morbi facilisis velit id blandit tincidunt. Vivamus lacinia venenatis lectus a efficitur. Morbi et vestibulum metus. Sed dictum ex nec eros sagittis, sit amet convallis lorem fermentum. Ut metus turpis, pharetra ac dui sit amet, tincidunt fringilla est. Quisque a euismod lorem. Praesent tincidunt diam ut justo consequat, ut vehicula arcu lobortis.</p>
+
+            </div>
+        </div>
+
+        <!-- Carousel showing featured projects -->
+        <div class="container">
+            <div class="section" data-aos="zoom-in">
+                <h2>Featured Projects</h2>
+                <hr>
+                  <div class="container-lg my-3">
+                    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png" class="d-block w-100" alt="Slide 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png" class="d-block w-100" alt="Slide 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder.png" class="d-block w-100" alt="Slide 3">
+                            </div>
+                        </div>
+
+                        <!-- Carousel controls -->
+                        <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="container">
+                <div class="section">
+                    <div class="row">
+                        <h3 class="progress-title">HTML5</h3>
+                        <div class="progress orange">
+                            <div class="progress-bar" style="width:30%; background:#fe3b3b;">
+                                <div class="progress-value">Beginner</div>
+                            </div>
+                        </div>
+                        <h3 class="progress-title">CSS3</h3>
+                        <div class="progress blue">
+                            <div class="progress-bar" style="width:30%; background:#1a4966;">
+                                <div class="progress-value">Beginner</div>
+                            </div>
+                        </div>
+                        <h3 class="progress-title">VBA</h3>
+                        <div class="progress green">
+                            <div class="progress-bar" style="width:60%; background:#53aa2c;">
+                                <div class="progress-value">Proficient</div>
+                            </div>
+                        </div>
+                        <h3 class="progress-title">Python</h3>
+                        <div class="progress purple">
+                            <div class="progress-bar" style="width:60%; background:#66406f;">
+                                <div class="progress-value">Proficient</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="container">
+                <div class="section">
+                    <h2>Part 2: Placeholder</h2>
+                    <hr>
+                    <!-- free response question -->
+                    <h3>What will go here?</h3>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="footer-dark">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="projects.html">Featured Projects</a></li>
+                                <li><a href="resume.html">Resume</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>Social Media</h3>
+                            <ul>
+                                <li><a href="https://www.linkedin.com/in/mychaelbryan/">LinkedIn</a></li>
+                                <li><a href="https://github.com/MBportfolio">GitHub</a></li>
+                                <li><a href="projects.html">Portfolio</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 item text">
+                            <h3>Contact</h3>
+                            <ul>
+                                <li><a href="mailto:example@gmail.com">E-mail: example@gmail.com</a></li>
+                                <li><a href="tel:1234567890">Phone: 123-456-7890</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="copyright">Mychael Bryan © 2022</p>
+                </div>
+            </footer>
+        </div>
+
+
+    </body>
+</html>
